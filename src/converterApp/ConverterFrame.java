@@ -7,7 +7,7 @@ package converterApp;
 
 /**
  *
- * @author 041406846
+ * @author some guys
  */
 public class ConverterFrame extends javax.swing.JFrame {
 
@@ -16,6 +16,8 @@ public class ConverterFrame extends javax.swing.JFrame {
      */
     public ConverterFrame() {
         initComponents();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2); //to show the display at center of screens
     }
 
     /**
